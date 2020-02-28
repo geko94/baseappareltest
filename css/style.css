@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', Arial ;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(253, 241, 241);
+}
+
+h1 {
+    font-size: 64px;
+    letter-spacing: 16px;
+    line-height: 1.1;
+    color: hsl(0, 6%, 24%);
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.75;
+    padding-bottom: 40px;
+}
+
+.container {
+    width: 1440px;
+    height: auto;
+    margin:auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.highlight {
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-size: cover;
+    max-width: 58%;
+    float: left;
+    padding-left: 160px;
+    padding-right: 200px;
+}
+
+.logo {
+    margin-top: 50px;
+    margin-bottom: 140px;
+}
+
+.hero {
+    max-width:42%;
+    float: right;
+}
+
+.responsive {
+    max-width: 100%;
+}
+
+img {
+    display: block;
+}
+
+#hero-mobile {
+    display: none;
+}
+
+form {
+    padding-bottom: 161px;
+}
+
+.foo {
+    padding: 20px;
+    padding-right: 250px;
+    border: rgb(206, 206, 206) 1px solid;
+    border-radius: 30px;
+    font-weight: 600;
+    outline: none;
+}
+
+.foo::placeholder {
+    color: hsla(0, 36%, 70%, 0.5);
+    font-size: 16px;
+    padding-right: 300px;
+}
+
+input:focus {
+    border: hsl(0, 74%, 74%) 1px solid;
+}
+
+
+button {
+    border: 0;
+    border-radius: 30px;
+    padding:18px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    bottom: 161px;
+    left: 500px;
+    font-size: 34px;
+    font-weight: 300;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    color: #fff;
+    box-shadow: hsla(0, 80%, 86%, 0.8) 0px 15px 30px 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:active {
+    background-image: linear-gradient(135deg, hsl(0, 100%, 92%), hsl(0, 100%, 88%));
+    box-shadow: hsla(0, 100%, 85%, 1) 0px 15px 25px 1px;
+    outline: none;
+}
+
+.primary {
+    color: hsl(0, 36%, 70%);
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.light {
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+@media (max-width: 1440px) {
+    .container {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 1242px) {
+    .container{
+        max-width: 80%;
+    }
+    .highlight {
+        float: none;
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        padding-right: 160px;
+    }
+    .hero {
+        display: none;
+    }
+}
+
+@media (max-width: 839px) {
+    .highlight {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    button#submitForm {
+        left: 400px;
+    }
+}
+
+@media (max-width: 759px) {
+    .highlight {
+        padding: 0;
+    }
+    button#submitForm {
+        left: 350px;
+    }
+}
+
+@media (max-width: 571px) {
+    button#submitForm {
+        left: 300px;
+    }
+    .foo {
+        padding-right: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    button#submitForm {
+        left: 200px;
+    }
+    .foo {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container{
+        max-width: 100%;
+    }
+    .logo {
+        display: block;
+        width: 30%;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        margin-left: 35px;
+    }
+    #hero-mobile {
+        display: block;
+    }
+    .container {
+        position: initial;
+        transform: none;
+    }
+    h1{
+        text-align: center;
+        font-size: 42px;
+        letter-spacing: 12px;
+        padding-top: 68px;
+    }
+    p {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    .foo {
+        margin: auto;
+        display: block;
+        padding-right: 0;
+        width: 80%;
+    }
+    button#submitForm {
+        top: 720px;
+        bottom: initial;
+        left: 270px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+@media (max-width: 330px) {
+    button#submitForm {
+        top: 745px;
+        left: 220px;
+    }
+
+}
